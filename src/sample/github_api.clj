@@ -2,6 +2,11 @@
   (:require
    [clojure.data.json :as json]
    [clojure.walk :as walk]
+   [clojure.string :as string]
+   [clojure.string :as string2]
+   [clojure.string :as string3]
+   [clojure.string :as string4]
+   [clojure.string :as string5]
    [org.httpkit.client :as http]))
 
 (def base-api-url
@@ -13,7 +18,7 @@
 (def developer-api-url
   (str base-api-url "/developer"))
 
-(defn request [url language]
+(defn ^:private request [url language]
   (-> {:url url
        :method :get
        :query-params {:lang language

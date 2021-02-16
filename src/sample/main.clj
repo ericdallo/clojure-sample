@@ -8,10 +8,12 @@
   (case type
     repo (github-api/fetch-trending-repos (name language))
     developer (github-api/fetch-trending-developers (name language))
-    (println "Inform :type as repo or developer")))
+    (do (println "Inform :type as repo or developer")
+        (System/exit 1))))
 
 (defn -main
-  "Return the trending projects for the specified programming `language`."
+  "Return the trending projects for the specified
+  programming `language` and `type`."
   [{:keys [type language]}]
   (->> (fetch-items type language)
        (take 10)
