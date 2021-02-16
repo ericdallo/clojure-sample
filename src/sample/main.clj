@@ -12,9 +12,13 @@
         (System/exit 1))))
 
 (defn -main
-  "Return the trending projects for the specified
+  "Return the trending projects/developers for the specified
   programming `language` and `type`."
   [{:keys [type language]}]
   (->> (fetch-items type language)
        (take 10)
        pprint/pprint))
+
+
+(comment
+  (github-api/fetch-trending-repos "clojure"))

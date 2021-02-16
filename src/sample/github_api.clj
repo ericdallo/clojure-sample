@@ -1,13 +1,12 @@
 (ns sample.github-api
   (:require
    [clojure.data.json :as json]
-   [clojure.walk :as walk]
    [clojure.string :as string]
-   [clojure.string :as string2]
-   [clojure.string :as string3]
-   [clojure.string :as string4]
-   [clojure.string :as string5]
-   [org.httpkit.client :as http]))
+   [clojure.walk :as walk]
+   [org.httpkit.client :as http]
+   [clojure.set :as set])
+  (:import
+   [java.util Date]))
 
 (def base-api-url
   "https://trendings.herokuapp.com")
