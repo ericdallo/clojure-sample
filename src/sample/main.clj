@@ -19,6 +19,5 @@
        (take 10)
        pprint/pprint))
 
-
 (comment
   (github-api/fetch-trending-repos "clojure"))
