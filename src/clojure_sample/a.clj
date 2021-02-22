@@ -1,6 +1,7 @@
 (ns clojure-sample.a
-  #_(:require [rewrite-clj.zip :as z]
-            [rewrite-clj.parser.core :as rpc]))
+  (:require [clojure.tools.namespace.file :as tools.ns]))
+
+
 
 (println "asd")
 
