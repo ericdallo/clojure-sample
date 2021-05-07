@@ -1,3 +1,3 @@
 {:deps {org.clojure/clojure {:mvn/version "1.10.3"}
-        org.clojure/clojurescript {:mvn/version "1.10.758"}}
+        midje {:mvn/version "1.9.4"}}
  :paths ["src" "resources"]}
