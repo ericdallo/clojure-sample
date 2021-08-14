@@ -6,7 +6,13 @@
   :dependencies [[org.clojure/clojure "1.10.3"]]
   :main ^:skip-aot clojure-sample.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}
-             :clojure-lsp {:souce-paths ["src" "classes" "resources"]
-                           :dependencies [[com.github.clojure-lsp/clojure-lsp "2021.08.05-19.36.09"]]}}
-  :aliases {"clean-ns" ["with-profile" "+clojure-lsp" "run" "-m" "clojure-lsp.main" "clean-ns"]})
+  :profiles {:uberjar {:aot :all}}
+  :plugins [[lein-clojure-lsp "0.1.0"]]
+  :clojure-lsp {:settings {:clean {:ns-inner-blocks-indentation :same-line}}}
+  :aliases {"clean-ns" ["clojure-lsp" "clean-ns" "{:dry? true}"]
+            "format" ["clojure-lsp" "format" "{:dry? true}"]
+            "lint" ["do" ["clean-ns"] ["format"]]
+
+            "clean-ns-fix" ["clojure-lsp" "clean-ns"]
+            "format-fix" ["clojure-lsp" "format"]
+            "lint-fix" ["do" ["clean-ns-fix"] ["format-fix"]]})
