@@ -7,7 +7,7 @@
   :main ^:skip-aot clojure-sample.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
-  :plugins [[lein-clojure-lsp "0.1.2"]]
+  :plugins [[com.github.clojure-lsp/lein-clojure-lsp "1.0.7"]]
   :clojure-lsp {:settings {:clean {:ns-inner-blocks-indentation :same-line}}}
   :aliases {"clean-ns" ["clojure-lsp" "clean-ns" "--dry"]
             "format" ["clojure-lsp" "format" "--dry"]
