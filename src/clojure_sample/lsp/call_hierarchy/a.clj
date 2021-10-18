@@ -3,3 +3,6 @@
 
 (defn a-fun []
   (b/b-fun-1))
+
+(defn b-fun []
+  (b/b-fun-1))
