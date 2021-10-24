@@ -1,6 +1,5 @@
 (ns clojure-sample.core-test
   (:require
-   [clojure-sample.core :refer :all]
    [clojure.test :refer [deftest is testing]]
    [matcher-combinators.test :refer :all]))
 
