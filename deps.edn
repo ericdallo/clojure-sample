@@ -1,5 +1,6 @@
 {:deps {org.clojure/clojure {:mvn/version "1.10.3"}
         org.clojure/clojurescript {:mvn/version "1.10.758"}
-        nubank/matcher-combinators {:mvn/version "3.3.1"}}
+        nubank/state-flow {:mvn/version "5.14.0-BLA"}
+        nubank/matcher-combinators {:mvn/version "3.3.1-BLA"}}
  :paths ["src" "resources"]
  :aliases {:test {:extra-paths ["test"]}}}
