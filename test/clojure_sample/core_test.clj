@@ -6,12 +6,14 @@
    ;; [matcher-combinators.test :refer [match?]]
    [state-flow.api :refer [defflow flow]]))
 
+;; This one prints perfectly
 (deftest matcher-test
   (testing "testing matcher report"
     (is (match?
          {:bla 1 :blow {:f 2}}
          {:blow {:bla {:a 2}}}))))
 
+;; This one doesn't print perfectly
 (defflow matcher-test-bla
   (flow "testing matcher report"
         (match?
