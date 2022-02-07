@@ -1,0 +1,2 @@
+{:paths ["src"]
+ :deps {sub/a {:local/root "../a"}}}
