@@ -1,1 +1,3 @@
-{:lint-as {com.fulcrologic.guardrails.core/>defn clojure.core/defn}}
+{:lint-as {clojure-sample.client/defabctest clojure.core/defn}
+ :linters {:clojure-lsp/unused-public-var
+           {:exclude-when-defined-by #{clojure-sample.client/defabctest}}}}

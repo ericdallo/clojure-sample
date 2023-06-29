@@ -1,6 +1,12 @@
 (ns clojure-sample.client
-  (:require [clojure-sample.api :as api]))
+  (:require
+   [clojure.test :refer [deftest is]]))
 
-(api/some-func 1 2)
+(defmacro defabctest
+  [name [sym] & body]
+  `(deftest ~name
+     (let [~sym 5]
+       ~@body)))
 
-(api/other-func 1 2)
+(defabctest my-test [x]
+  (is (= x 5)))
