@@ -1,6 +1,6 @@
-{:deps {org.clojure/clojure {:mvn/version "1.10.3"}
-        org.clojure/clojurescript {:mvn/version "1.10.758"}
-        org.clojure/core.async {:mvn/version "1.5.648"}
-        nubank/matcher-combinators {:mvn/version "3.3.1"}}
+{:deps {org.clojure/clojure {:mvn/version "1.11.1"}}
  :paths ["src" "resources"]
- :aliases {:test {:extra-paths ["test"]}}}
+ :aliases {:lint {:deps {io.github.clojure/tools.build {:git/tag "v0.9.4" :git/sha "76b78fe"}
+                         com.github.clojure-lsp/clojure-lsp-server {:mvn/version "2023.07.01-22.35.41"}}
+                  :ns-default lint}
+           :test {:extra-paths ["test"]}}}
