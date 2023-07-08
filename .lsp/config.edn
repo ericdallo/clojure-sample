@@ -1,2 +1,1 @@
-{:project-specs [{:project-path "bla.edn"
-                  :classpath-cmd ["echo" "\nasd\nasdsad\nasd\212\n----------\n/home/greg/dev/clojure-sample/test:/home/greg/dev/clojure-sample/src:/home/greg/dev/clojure-sample/dev-resources:/home/greg/dev/clojure-sample/resources:/home/greg/dev/clojure-sample/target/default/classes:/home/greg/.m2/repository/org/clojure/clojure/1.10.3/clojure-1.10.3.jar:/home/greg/.m2/repository/org/clojure/spec.alpha/0.2.194/spec.alpha-0.2.194.jar:/home/greg/.m2/repository/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar:/home/greg/.m2/repository/nrepl/nrepl/0.8.3/nrepl-0.8.3.jar:/home/greg/.m2/repository/clojure-complete/clojure-complete/0.2.5/clojure-complete-0.2.5.jar"]}]}
+{:paths-ignore-regex [".*/googlepay/java.*"]}
