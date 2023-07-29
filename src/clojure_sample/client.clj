@@ -1,12 +1,13 @@
 (ns clojure-sample.client
   (:require
-   [clojure.test :refer [deftest is]]))
+   [compojure.api.core :as api.core]
+   [compojure.api.sweet :refer :all]))
 
-(defmacro defabctest
-  [name [sym] & body]
-  `(deftest ~name
-     (let [~sym 5]
-       ~@body)))
-
-(defabctest my-test [x]
-  (is (= x 5)))
+(api.core/context "/hello-async" []
+  (resource
+   {:get
+    {:parameters {:query-params {:name String}}
+     :responses {200 {:schema {:message String}}
+                 404 {}
+                 500 {}}
+     :handler (fn [{{:keys [name]} :query-params}])}}))
