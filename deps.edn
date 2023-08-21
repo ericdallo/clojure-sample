@@ -1,6 +1,10 @@
 {:deps {org.clojure/clojure {:mvn/version "1.11.1"}}
- :paths ["src" "resources"]
+ :paths ["src/clojure" "target/classes" "resources"]
  :aliases {:lint {:deps {io.github.clojure/tools.build {:git/tag "v0.9.4" :git/sha "76b78fe"}
                          com.github.clojure-lsp/clojure-lsp-server {:mvn/version "2023.07.01-22.35.41"}}
                   :ns-default lint}
-           :test {:extra-paths ["test"]}}}
+           :test {:extra-paths ["test"]}
+           :build {:deps {io.github.clojure/tools.build {:git/url "https://github.com/clojure/tools.build.git"
+                                                         :tag "v0.9.4"
+                                                         :sha "76b78fe"}}
+                   :ns-default build}}}
