@@ -1,0 +1,4 @@
+-m
+nrepl.cmdline
+--middleware
+[recider.nrepl/cider-middleware]
