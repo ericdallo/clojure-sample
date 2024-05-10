@@ -5,9 +5,11 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.11.1"]]
   :plugins [[com.github.clojure-lsp/lein-clojure-lsp "1.3.24"]]
-  :main ^:skip-aot clojure-sample.core
   :target-path "target/%s"
+  :java-source-paths ["src-java"]
   :profiles {:uberjar {:aot :all}}
   :clojure-lsp {:settings {:clean {:ns-inner-blocks-indentation :next-line}}}
   :pedantic? false
   :aliases {"clean-ns" ["clojure-lsp" "clean-ns"]})
+
+

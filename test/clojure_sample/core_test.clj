@@ -1,20 +1,18 @@
 (ns clojure-sample.core-test
-  (:require [clojure-sample.core :refer :all]
-            [clojure.test :refer [deftest testing is]]
-            [matcher-combinators.test :refer [match?]]))
+  (:require
+   [clojure-sample.core :as sample.core]
+   [clojure.test :refer [deftest is]]))
+
+(defn |bar [])
+
+(defn |baz [])
+
+
+ {:a {:b {:c :d}}} 2
 
 (deftest a-test
-  (testing "FIXME, I fail."
-    (is (= {:a 2 :b 2}
-          {:a 2 :b 2}))))
+  (println "foo")
+  (is (= {:a 2 :b 2}
+         (sample.core/|fob))))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= {:a 2 :b 2}
-          {:a 2 :b 2}))))
-
-(deftest matcher-test
-  (testing "testing matcher report"
-    (is (match?
-          {:bla 1 :blow {:f 2}}
-          {:blow {:bla {:a 2}}}))))
+;; (future (Thread/sleep 1000) (println "foo"))

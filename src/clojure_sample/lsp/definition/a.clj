@@ -11,7 +11,7 @@
   [{:keys [a] :or {a 1}}]
   a)
 
-(b
+#_(b
   (a
     (foo)
     (bar)))
