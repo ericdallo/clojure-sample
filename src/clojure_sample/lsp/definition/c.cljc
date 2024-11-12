@@ -1,5 +1,8 @@
-(ns clojure-sample.lsp.definition.c
-  (:require
-    [clojure.string :as str]))
+(ns clojure-sample.lsp.definition.c)
 
-(str/join "," "")
+#_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
+(def foo 1)
+
+
+;; uncomment line below to repro the problem
+;; (def a 1)
