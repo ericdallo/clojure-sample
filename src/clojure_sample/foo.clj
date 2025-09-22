@@ -8,3 +8,8 @@
 (some-function)
 
 (some-function)
+
+(defmacro my-custom-indentation [& _body])
+
+(my-custom-indentation []
+  1)
