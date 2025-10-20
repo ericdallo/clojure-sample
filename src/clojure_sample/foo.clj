@@ -1,15 +1,4 @@
 (ns clojure-sample.foo)
 
-(defn some-function []
-  (concat (str (+ 1 2) "-foo")))
-
-(some-function)
-
-(some-function)
-
-(some-function)
-
-(defmacro my-custom-indentation [& _body])
-
-(my-custom-indentation []
-  1)
+(defn foo [a b]
+  (+ a b))
