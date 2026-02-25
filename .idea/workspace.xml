@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a25267a-875c-4da3-85f6-35178ecbfa74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/clojure_sample/bar.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clojure_sample/bar.clj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.clj-kondo/config.edn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/clojure-sample.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clojure_sample/bar.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clojure_sample/foo.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clojure_sample/foo.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +46,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Clojure REPL.Local REPL.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "repro-kondo-cache",
+    "RunOnceActivity.restore.workspace.module": "true",
+    "git-widget-placeholder": "lein-basic",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/greg/dev/eca-intellij/build/distributions/eca-intellij-0.11.2.zip",
+    "last_opened_file_path": "/home/greg/dev/eca-intellij/build/distributions/eca-intellij-0.17.0.zip",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager">
